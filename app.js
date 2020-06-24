@@ -178,4 +178,271 @@
 // }
 
 
+//Assignment31=34
+//task1
+// var today = new Date();
+// var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+// var dateTime = date+' '+time;
+// document.write(dateTime);
 
+//task2
+// var monthNames = ["January", "February", "March", "April", "May", "June",
+//   "July", "August", "September", "October", "November", "December"
+// ];
+
+// var d = new Date();
+// alert("The current month is " + monthNames[d.getMonth()]);
+
+//task3
+// var dayNames = ["Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var d = new Date();
+// alert("The current day is " + dayNames[d.getDay()]);
+
+//task4
+// var d = new Date();
+// num=d.getDay();
+//if (num==1 || num==0){
+// alert("it's funday")}
+
+
+//task5
+// var d = new Date();
+// num=d.getDate();
+//if (num<16){
+// alert("it's 1st fifteen days of month");}
+//else{
+// alert("last fifteen days of month");}
+
+//task6
+// var d = new Date();
+// num=d.getTime();
+// var date = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+// var time = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+// var dateTime = date+' '+time;
+// document.write(dateTime+"<br>estimmed milliseconds after 1970 "+num+"<br>estimmed mminutes after 1970 "+(num/60000));
+
+//task7
+// var d = new Date();
+// num=d.getHours();
+// if(num>=0&&num<12){
+//     alert("it's am")
+// }
+// else{
+//     alert("it's pm")
+// }
+
+//task8
+// var d=new Date();
+// Laterdate= new Date("Dec 31, 2020");
+// document.write(Laterdate)
+
+//task9
+// var date1= new Date("May 23, 2020");
+// var date2=new Date("June 22, 2020");
+// var Difference_In_Time = date2.getTime() - date1.getTime(); 
+// var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+// document.write(Difference_In_Days+" days passed since ramzan");
+
+//task10
+// var date1= new Date("Jan 1, 2015");
+// var date2=new Date("June 22, 2020");
+// var Difference_In_Time = date2.getTime() - date1.getTime(); 
+// var Difference_In_seconds = Difference_In_Time / (1000 * 60 );
+//document.write(date2); 
+// document.write(Difference_In_seconds+"  seconds have passed since begining of 2015");
+
+//task11
+// var today = new Date();
+// var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+// var time1 = (today.getHours()-1) + ":" + today.getMinutes() + ":" + today.getSeconds();
+// var dateTime = date+' '+time;
+// document.write("current time "+dateTime);
+// var dateTime1 = date+' '+time1;
+// document.write("<br>1 hour ago "+dateTime1);
+
+//task12
+// var today = new Date();
+// var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+// var date1 = (today.getFullYear()-100)+'-'+(today.getMonth()+1)+'-'+today.getDate();
+// var dateTime = date+' '+time;
+// document.write("current time "+dateTime);
+// var dateTime1 = date+' '+time;
+// document.write("<br>100 years ago "+dateTime1);
+
+//task13
+// var birth_year=+prompt("enter your birth year");
+// var d= new Date();
+// var y=d.getFullYear();
+// document.write("you age "+(y-birth_year));
+
+//task14
+// document.write("K Electric Bill <br><br>".bold());
+// var name="ahmer",month="june",no=410,c=16;
+// document.write("<br>customer name"+name);
+// document.write("<br>month"+month);
+// document.write("<br>number of units "+no);
+// document.write("<br>charges "+c);
+// var late_charge=350;
+// document.write("<br><br><br>within due date "+(no*c));
+// document.write("<br>late charges "+late_charge);
+// document.write("<br>within due date "+((no*c)+late_charge));
+
+
+//Assignment35-38
+//task1
+// function telltime(){
+// var d= new Date();
+// document.write(d);
+// }
+// telltime();
+
+//task2
+// function greet(){
+//     var first_name=prompt();
+//     var last_name=prompt();
+//     document.write("greetings "+(first_name+last_name));
+// }
+// greet();
+
+//task3
+// function sum(){
+//     var first=+prompt();
+//     var last=+prompt();
+//     return first+last
+// }
+// document.write( sum());
+
+//task4
+// function perform(num1,num2,){
+    
+//     return (num1+num2);
+// }
+// document.write( perform(1,2));
+
+//task5
+// function square(num){
+//     return (num*num);
+// }
+// document.write(square(9));
+
+//task6
+// function factorial(n){
+//     var x;
+//     var fact=1;
+//     for(x=n;x>0;x--){
+//         fact*=x;
+//     }
+//     return fact;
+// }
+// document.write(factorial(4));
+
+//task7
+// function count(){
+//     var x;
+//     var start=+prompt("input starting number");
+//     var end=+prompt("input ending number"); 
+//     for(x=start;x<end;x++){
+//         document.write(x+"<br>")
+//     }
+// }
+// count();
+
+//task8
+// function hyp(){
+//     var base=+prompt("input base number");
+//     var perp=+prompt("input perp number"); 
+//     var hyp;
+//     function square(b,c){
+//         return ((b*b)+(c*c));
+
+//     }
+//     hyp=Math.sqrt(square(base,perp));
+//     return hyp;
+// }
+// document.write(hyp());
+
+//task9
+// function A(width,height){
+//     return  (width * height);
+// }
+// document.write(A(3,4));
+
+///task10
+// function palindrom(n){
+//     length=n.length-1;
+//     var x;
+//     var str="";
+//     for(x=length;x>=0;x--){
+//         str+=n[x];
+//     }
+//     if (str==n){
+//         document.write("it's palindrome");
+//     }
+//     else{
+//         document.write("its not palindrome");
+//     }
+
+
+// }
+// palindrom("madam");
+
+//task11
+// function uppercase(str)
+// {
+//   var array1 = str.split(' ');
+//   var newarray1 = [];
+    
+//   for(var x = 0; x < array1.length; x++){
+//       newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+//   }
+//   return newarray1.join(' ');
+// }
+// alert(uppercase("the quick brown fox"));
+
+//task12
+// function longestword(str)
+// {
+//   var array1 = str.split(' ');
+//   var word=array1[0].length;
+//   var letter=array1[0];
+//   var x;
+//   for(x=0;x<array1.length;x++){
+//       if (word<array1[x].length){
+//           word=array1[x].length;
+//           letter=array1[x];
+//       }
+//   }
+//   return letter;
+  
+// }
+// document.write(longestword("Web Development Tutorial'"));
+
+//task13
+// function countletter(str,chr)
+// {
+//   var x;
+//   var count=0;
+//   for(x=0;x<str.length;x++){
+//       if (str[x]==chr){
+//           count++;
+//       }
+//   }
+//   return count;
+  
+// }
+// document.write(countletter('JsResources.com', 'o'));
+
+//task14
+// function circum(r){
+//     return (2*3.141*r);
+// }
+// function circle(r){
+//     return (3.141*r*r);
+// }
+// var a=circle(9);
+// var b=circum(9);
+// document.write("Area of cirle is :"+a)
+// document.write("<br>circumference of circle is :"+b);
